@@ -1,0 +1,253 @@
+// Write your styles here
+@import"variables2";
+
+@mixin h1letter{
+		color:$h1lettercolor;
+		font-weight: bold;
+		font:$fontStyle;
+		font-size:$h1letterfontsize;
+		text-transform:uppercase;
+}
+
+@mixin pageStyle{
+		color:$h1lettercolor;
+		font:$fontStyle;
+		line-height:$pageHeight;	
+}
+@mixin pageButton{
+	font:$fontStyle;
+	font-size: 15px;
+	background:$pageButtonBackground ;
+	text-transform:uppercase;
+	color:#FFFFFF;
+}
+
+@mixin linksHeader{
+	color:$letterColor;
+	font:$fontStyle;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+
+@mixin pageSearch{
+	width: 180px;
+	border:$form;
+	padding: 10px 0px 10px 20px;
+}
+
+@mixin buttonForm{
+	border:none;
+	width: 200px;
+	height: 38px;
+	display: block;
+	float: right;
+	text-transform:uppercase;
+	background: $backgorundbuttomcolor;
+	color:#FFFFFF;
+}
+
+body{
+		background:$backgroundBody;
+		margin: 0;
+		header{
+				background: $backgroundContent;
+				height:100vh;
+				.top-wrapper{
+						justify-content: space-between;
+						display: flex;
+						.logo{
+								width: 15%;
+								img{
+										width: 100%;
+								}
+						}
+						nav{
+								margin-top: 20px;
+								a{
+										border-color: #FFFFFF;
+										border-left: 2px solid;
+										padding: 25px 90px;
+										@include linksHeader;
+										&:first-child{
+											border-left: none;
+										}
+								}
+						}
+				}
+				section{
+						text-align:center;
+						position: absolute;
+						top:50%;
+						left:50%;
+						transform:translate(-50%,-50%);
+						
+						h1{
+								@include h1letter;
+								color:$letterColor;
+								width:700px;
+								margin-bottom: 30px;
+								font-weight: 300;
+						}
+						.btn{
+
+								@include pageButton;
+
+						}
+						.btn-top{
+								padding: 15px 65px 14px 63px;
+						}
+				}
+		}
+		main{
+				width: 960px;
+				margin:auto;
+				padding-top: 20px;
+				.toolbar{
+						display: flex;
+						input{
+								@include pageSearch;
+								margin:0px 10px 0px auto;
+								background: transparent;
+
+						}
+				}
+
+				section{
+						h1{
+								@include h1letter;
+								text-align: right;
+								margin:19px 0px 0px;
+								font-weight: 300;
+						}
+				}
+
+				.post-list{
+						margin-bottom: 65px;
+						article{
+								background:$articlebacgrkound;
+								margin-bottom: 20px;
+								padding: 12px 20px 12px 12px;
+								display: flex;
+								img{
+										margin-right: 10px;
+										width:280px;
+										height: 280px;
+								} 
+								.post{
+										margin:5px 0 20px;
+										.post-description{
+												font:$fontStyle;
+												color:$colorDescrp;
+												font-size: 12px;
+												margin:0px 0px 5px 5px;
+										}
+										h3{
+												color:$h3lettercolor;
+												font:$fontStyle;
+												font-size:$h3letterfontsize;
+												border-top:$form;
+												margin-top: 0;
+												margin-bottom:0px;
+												padding-top: 8px;
+												font-weight: 300;
+												text-transform:uppercase;
+
+										}
+										p{
+												@include pageStyle;
+												margin:0;
+										}
+								}
+								button{
+										@include buttonForm;
+								}
+								.baton{
+										@include pageButton;
+										margin-bottom: 20px;
+								}
+						}
+
+				}
+				.about{
+						width:930px;
+						margin: auto;
+						padding-bottom: 60px;
+						font-weight: 300;
+						p{	
+								@include pageStyle;
+								margin: 0 0 20px;
+						}	
+						img{
+								width: 100%;
+						}
+				}	
+				.contact1{
+						h1{
+								margin:0;
+								font-weight: 300;
+						}
+
+						h4{
+								font:$fontStyle;
+								font-weight: 300;
+								text-align: right;
+								margin: 0 0 20px;
+								text-transform: uppercase;
+								color: $h4colortext;
+						}
+						form{
+								padding-bottom: 9px;
+								label{
+												display: block;
+												font:$fontStyle;
+												color: $h3lettercolor;
+												text-align: right;
+										}
+								.inPUT{
+								justify-content: space-between;
+								margin-bottom: 20px;
+								display: flex;
+								
+								input{
+										height: 45px;
+										border: $form;
+									}
+									.name{
+											width:470px;
+											background: $name;
+									}
+									.email{
+											width: 480px;
+											background: $email;
+									}
+								}
+								textarea{
+										width: 955px;
+										height: 115px;
+										border:$form;
+										margin-bottom: 15px;
+										background: $textarea;
+								}
+								button{
+										@include buttonForm;
+								}
+								.baton{
+										@include pageButton;
+								}
+						}
+				}
+		}
+		footer{
+				padding-bottom: 9px;
+				margin-top: 30px;
+				span{
+						font-size: 12px;
+						margin-left: 16px;
+						font:$fontStyle;
+						color:black;
+						
+				}
+
+		}
+}
