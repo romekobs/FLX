@@ -1,0 +1,316 @@
+html{
+  overflow-x: hidden;
+}
+header{
+    background: url("../img/sample2.jpg") no-repeat center center/cover;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
+  }
+body{
+  background: #F3F3F3;
+  margin: 0;
+  font-family:'Open Sans',sans-serif;
+  padding: 0;
+  
+}
+h1 span{
+   color: #FFFFFF;
+   font-size: 70px;
+    
+}
+ul, li {
+    padding: 0;
+    display: block;
+    margin: 0;
+    
+ 
+  }
+.LeftUpperCorner a{
+    display: inline-block;
+    margin-left: 58px;
+    color: #fff;
+    text-decoration: none;
+}
+.RightUpperCorner {
+  color: #FFFFFF;
+  letter-spacing:3px;
+  display: flex;
+  margin: 2.5%;
+  justify-content: space-between;
+}
+#NameOfSite{
+ height: 10em;
+  margin-top:50px;
+  }
+#NameOfSite h1{
+   color: #FFFFFF;
+  letter-spacing: 7px; 
+   margin: 0;
+   text-align: center;
+}
+#NameOfSite p{
+  color:#FFFFFF;
+  margin: 0;
+  text-align: center;
+}
+
+.mainButton{
+  display: flex;
+  justify-content: space-between;
+  margin:5% 14% 50px 14%;
+  height: 50px; 
+  background: transparent;
+
+}
+.mainButton a{
+    color:#FFFFFF;
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.mainButton li{
+    background: #00000029;
+    border:1px solid white; 
+    height: 100%; 
+    width: 150px; 
+}
+
+.mainButton li:hover{
+  background:#00000052;
+}
+.Cecerone:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0;
+  border-style: solid;
+  border-width: 0 100vw 270px 0;
+  border-color: transparent #000 transparent transparent;
+  
+
+}
+.backgroundCecerone div{
+  width: 50%;
+  z-index: 1;
+}
+
+.CeceroneTxtLeft p{
+  margin-top: 100px;
+  }
+.CeceroneTxtRight p{
+color: #fff;
+  }
+.backgroundCecerone{
+  display: flex;
+}
+.Cecerone {
+  background: #F3F3F3;
+  padding-bottom: 80px;
+  z-index: auto;
+}
+.Apelles{
+  display: flex;
+  justify-content: flex-end;
+}
+.Argon{
+      width: 95%;
+      margin: auto;
+
+  }
+.Octavian h2{
+  text-align: center;
+  font-weight: 100;
+  justify-content: space-between;
+  align-items: center;
+}
+.Kaligyla{
+  width: 50%;
+  height: 300px;
+  background: url("../img/sample.jpg") top/cover;
+  position: relative;
+  float: left;
+
+}
+.Unicode{
+  color: #fff;
+  border: 2px solid #FFFFFF;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  position: absolute;
+  background: rgba(0,0,0, 0.5);
+ 
+}
+.BottomCornerTitle{
+   color: #fff;
+   bottom: 15px;
+   margin-left: 10px;
+   position: absolute;
+}
+
+
+.eLoka p{
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.eLoka{
+  padding: 20px;
+  width: 20%;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+.Afina{
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 2% 5% 2%;
+}
+.button{
+  background: #097774;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+}
+.eLoka  button{
+  width: 100%;
+  height: 35px;
+  font-size: 14px;
+}
+article strong{
+   font-weight: 900;
+}
+.Argon1{
+      width: 95%;
+      margin: 20px;
+      position: absolute;
+      background-size: cover;
+}
+.Mark{
+  margin-top: 450px;
+}
+.Via{
+   display: flex;
+  justify-content: space-around;
+  background: #FFFFFF;
+}
+.forTable {
+    width: 45%;
+  float: right;
+  text-align: center;
+  position:relative;
+}
+.Kyrama p{
+  margin:15px 10px 0px 10px;
+}
+.Kyrama {
+  margin-bottom: 25px;
+}
+.Templar{
+  margin-top:20px;
+  display: flex;
+ justify-content: flex-end;
+  align-items: center;
+}
+.Templar h2{
+  margin: 0;
+    text-align: center;
+  font-weight: 100;
+  justify-content: space-between;
+  align-items: center;
+}
+.Templar input{
+  text-align: center;
+  width: 13vw;
+  height: 35px;
+  background: #F3F3F3;
+  border: 1px solid #000;
+  margin-left: 10px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+.btn {
+    font-weight: bold;
+  background: #097774;
+  color: #fff;
+  border:none;
+  height: 35px;
+  margin-right: 15px;
+}
+
+
+.contact-information{
+  display: flex;
+  justify-content: space-between;
+}
+
+.artifact-box{
+  width: 24%;
+}
+
+.contact{
+  padding-top: 115px;
+  padding-bottom: 65px;
+  background: #FFFFFF;
+  padding-left:25px;
+  padding-right: 25px;
+
+}
+
+.artifact-box h3{
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.artifact-box p{
+  color: #9e9e9e;
+  margin-bottom: 5px;
+}
+
+.artifact-boxpre{
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #9e9e9e;
+}
+.artifact-box span{
+  color: #e8e8e8;
+}
+.contact p,pre {
+  color: #9E9E9E;
+
+}
+.artifact-box input{
+  text-align: center;
+  width: 13vw;
+  height: 35px;
+  background: #F3F3F3;
+  border: 1px solid #000;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.artifact-box form{
+  display: flex;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin:2px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    background: #FFFFFF;
+}
+.navigation a {
+    margin-left: 24px;
+    color: #000;
+    text-decoration: none;
+}
+.navigation span{
+  color:#9E9E9E;
+}
