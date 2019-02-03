@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: 0;
+}
+body {
+     font-weight: 100;
+    width: 100%;
+    background: #0b192f;
+    font-family: roboto;
+}
+
+#button-box {
+    display: none;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+#button::before, #button {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: white;
+}
+ #button::after{
+      position: absolute;
+    width: 20px;
+    height: 2px;
+    background: white;
+ }
+  #button {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: white;
+}
+
+#button::before {
+    content: "";
+    display: block;
+    transform: translateY(-6px);
+}
+
+#button::after {
+    content: "";
+    display: block;
+    transform: translateY(6px);
+}
+.post-1 {
+    background: #B71757;
+}
+
+.post-2 {
+    background: #0D7E71;
+}
+
+.post-3 {
+    background: #b1660e;
+}
+
+.post-4 {
+    background: #d12767;
+}
+
+.post-5 {
+    background: #2d95bb;
+}
+
+#sidebar div {
+    background: #ffffff;
+}
+.logotype span {
+    color: #B71757;
+}
+#sidebar {
+    display: flex;
+    flex-direction: column;
+}
+#content .list img:hover {
+    filter: opacity(50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.list > div {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;  
+}
+header {
+    background: #162b4d;
+    width: 100%;
+}
+img {
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+h1 {
+    font-weight: 100;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+p {
+    transition: 0.5s;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+@media screen and (min-width: 1px) {
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5vh;
+    }
+
+    #button-box {
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+        cursor: pointer;
+        display: block;
+    }
+
+    #button::before, #button::after, #button {
+        display: inline;
+    }
+
+    header .logotype {
+        font-size: 5vh;
+        padding-bottom: 7vh;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .box {
+        padding: 0 1.5vh;
+        overflow: hidden;
+    }
+
+    #content {
+        width: 100%;
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .list > div {
+        flex-direction: column;
+    }
+
+    .list img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+    .idk {
+        justify-content: stretch;
+        align-items: normal;
+        display: flex;
+        flex-direction: column;
+        align-self: normal;
+        padding: 2vh;                
+    }
+
+    .list > div h1 {
+        font-size: 5vh;
+        line-height: 5.5vh;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .list > div p {
+        line-height: 2.5vh;
+        color: rgba(255, 255, 255, 0.6);
+        padding-top: 2.3vh;
+        font-size: 1.9vh;        
+    }
+
+    #content .list .date {
+        padding: 5vh 0 0.5vh 0;
+        color: rgba(255, 255, 255, 0.3);
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: column;            
+    }
+
+    #content .list .date .sunny {
+        font-size: 4.5vh;
+    }
+
+    #content .list .date .world {
+        font-size: 2.8vh;
+    }
+    #sidebar > div {
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+    #sidebar img {
+        width: 100%;
+    }
+    #sidebar .text {
+        padding: 3vh 2vw 4vh;
+    }
+
+    #sidebar .text h2 {
+        font-size: 3.3vh;
+        cursor: pointer;
+        line-height: 3.3vh;
+        padding-bottom: 2vh;
+    }
+
+    #sidebar .text p {
+        font-size: 1.8vh;
+        line-height: 3vh;
+    }
+
+    footer {
+        width: 100%;
+        background: #162b4d;
+        margin-top: 3vh;
+        font-size: 2vh;
+        line-height: 2.5vh;
+        padding: 3vh;
+        display: flex;
+        color: rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        flex-direction: column;
+        text-align: center;                        
+    }
+}
+
+@media screen and (min-width: 480px) {
+    header {
+        margin-bottom: 2.5vw;
+    }
+    header nav {
+        display: none;
+    }
+
+    header .logotype {
+        font-size: 5vw;
+        cursor: pointer;
+    }
+    #button-box {
+        display: block;
+    }
+
+    .box {
+        padding: 0 2vh;
+    }
+
+    #content {
+      width: 100%;
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #content .list .date .sunny {
+        font-size: 5vw;
+    }
+
+    #content .list .date .world {
+        font-size: 4vw;
+    }
+
+    .list > div p {
+        line-height: 5vw;
+        color: rgba(255, 255, 255, 0.7); 
+        padding-top: 2.3vh;
+        font-size: 3vw;
+    }
+
+    .list > div h1 {
+        line-height: 7.5vw;
+        font-size: 6.5vw;
+    }
+
+    .list {
+        width: 58%;
+        margin-right: 2%;
+    }
+
+    #sidebar {
+        width: 40%;
+    }
+
+    #sidebar img {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    #sidebar > div {
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    #sidebar .text {
+        padding: 3vh 2.5vw 4vh;
+        align-self: stretch;
+    }
+
+    #sidebar .text h2 {
+        padding-bottom: 1vw;
+        cursor: pointer;
+        font-size: 3.5vw;
+        line-height: 4.5vw;        
+    }
+
+    #sidebar .text p {
+        font-size: 2vw;
+        line-height: 3.8vw;
+    }
+
+    footer {
+        width: 100%;
+        line-height: 3vw;
+        box-sizing: border-box;
+        padding: 5vw 0;
+        font-size: 2vw;                
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        align-items: center;
+        margin-bottom: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+    }
+
+    #button-box {
+        display: none;
+    }
+
+    header .logotype {
+        padding-left: 2vw;
+        padding-bottom: 0;
+        font-size: 3.5vw;
+        margin: 0;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        padding-right: 3vw;
+        margin-left: auto;
+        justify-content: stretch;
+        
+    }
+
+    header nav a {
+        padding: 3.4vw 1.7vw 3.4vw 1.7vw;
+        font-size: 1.3vw;
+        transition: 0.5s;
+        text-decoration: none;
+        color: #ffffff;
+        
+    }
+
+    nav a:hover {
+        background: rgb(28, 67, 109);
+    }
+
+    .box {
+        padding: 0 13vw;
+    }
+
+    #content {
+        width: 100%;
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .list {
+        margin: 0 1.5vw 0 0;
+        width: 100%;
+    }
+
+    #content .list > div .text {
+        width: 85%;
+        transition: 0.5s;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #content .list > div .text:hover {
+        opacity: .5;
+    }
+
+    #content .list > div .idk:hover {
+        align-self: normal;
+        background: rgba(0, 0, 0, .1);
+    }
+
+    .list > div {
+        justify-content: center;
+        cursor: pointer;
+        flex-direction: row;
+        
+    }
+
+    .image {
+        width: 50%;
+        box-sizing: border-box;
+        align-self: normal;
+        
+    }
+
+    .list img {
+        max-width: 100%;
+    }
+
+    #content .list .idk {
+        width: 50%;
+        box-sizing: border-box;
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        align-self: normal;
+    }
+
+    #content .list .date {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        padding: 1vw;
+        font-size: 3vw;
+        justify-content: space-around;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.3);
+        align-self: flex-start;
+        margin-left: auto;                        
+    }
+
+    #content .list .date .sunny {
+        font-size: 3.1vw;
+    }
+
+    #content .list .date .world {
+        font-size: 1.7vw;
+    }
+    .list > div p {
+        line-height: 1.4vw;
+        color: rgba(255, 255, 255, 0.7);
+        padding-top: 2.3vh;
+        font-size: 1.2vw;        
+    }
+    .list > div h1 {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+
+    #sidebar img {
+        width: 100%;
+        cursor: pointer;
+    }
+   #content .list > div:nth-child(even) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        display: flex;
+        
+    }
+    #sidebar > div {
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+    #sidebar .text p {
+        font-size: 1.1vw;
+        line-height: 1.5vw;
+    }
+
+ 
+    #sidebar .text {
+        padding: 3vh 2vw 4vh;
+    }
+    .list {
+        width: 72%;
+        margin-right: 3%;
+    }
+    #sidebar .text h2 {
+        padding-bottom: 1vw;
+        cursor: pointer;
+        font-size: 2vw;
+        line-height: 2.5vw;       
+    }
+
+    #content .list > div:nth-child(even) .idk {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    #sidebar {
+        width: 25%;
+    }
+
+    footer {
+        background: #162b4d;
+        margin-top: 3vh;
+        width: 100%;
+        line-height: 1.7vw;
+        padding: 3vh;
+        color: rgba(255, 255, 255, 0.4);
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.1vw;
+    }
+}
