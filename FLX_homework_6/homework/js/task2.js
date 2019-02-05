@@ -1,8 +1,8 @@
 // Your code goes here
 const a = prompt("Enter price without discount:");
 const b = prompt("Enter how much procent discount(from 0 to 99):");
-discountPrice(a, b);
-function discountPrice(a, b) 
+pricediscount(a, b);
+function pricediscount(a, b) 
 {
     if(isNaN(a) || isNaN(b)) 
     {
